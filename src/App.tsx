@@ -1,11 +1,13 @@
 import './App.css';
-import { SearchBar } from './components/molecules/SearchBar';
+import { Navbar } from './components/organisms/navbar';
+
+
 function App() {
   return (
     <div className="App">
       <div className="App-test">
-        <SearchBar/> 
-      </div>
+        <Navbar/>        
+      </div>     
     </div>
   );
 }

@@ -9,13 +9,24 @@ export interface ButtonProps {
     type?: ButtonTypes;
     text?: string;
     isDisabled?: boolean;
+    href?: string;
+    size?: number;
 }
 
-export function Button({ type = ButtonTypes.Default, text = '', isDisabled = false, ...props }: ButtonProps) {
+export function Button({ type = ButtonTypes.Default, text = '', isDisabled = false, href, size, ...props }: ButtonProps) {
     const btnClass = classNames({
         button: true,
         'button__default': type === ButtonTypes.Default,
         'button__link': type === ButtonTypes.Link,
       });
-    return <button className={btnClass} disabled={isDisabled} {...props}>{text}</button>
+
+      const style = {
+        'fontSize': size ? size : '16px'
+      };
+      
+    return <>
+        { type === ButtonTypes.Default ? 
+        (<button className={btnClass} disabled={isDisabled} {...props} style={{...style}}>{text}</button>) :
+        <a className={btnClass} href={ !!href ? href : '#'}  {...props} style={{...style}}>{text}</a>}
+    </>
 }

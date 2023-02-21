@@ -10,7 +10,6 @@ export function SearchBar() {
         <div className='search-bar__input--container'>
             <Input id="search-id" placeholder='ENTER KEYWORD'/>
             <Button text="SEARCH"/>
-        </div>
-        
+        </div>   
     </div>
 }
