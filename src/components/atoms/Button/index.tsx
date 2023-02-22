@@ -12,6 +12,7 @@ export interface ButtonProps {
     isDisabled?: boolean;
     href?: string;
     size?: number;
+    children?: React.ReactNode;
 }
 
 export function Button({ type = ButtonTypes.Default, text = '', isDisabled = false, href, size, ...props }: ButtonProps) {
@@ -27,9 +28,13 @@ export function Button({ type = ButtonTypes.Default, text = '', isDisabled = fal
       
     return <>
         { type === ButtonTypes.Default ? 
-        (<button className={btnClass} disabled={isDisabled} {...props} style={{...style}}>{text}</button>) :
+        (<button className={btnClass} disabled={isDisabled} {...props} style={{...style}}>
+            {text}
+            {props.children}
+        </button>) :
         <Link className={btnClass} to={!!href ? href : '#'} {...props} style={{...style}}>
             {text}
+            {props.children}
         </Link>
         }
     </>

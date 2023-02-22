@@ -1,3 +1,4 @@
+import { Button } from "../../atoms/Button";
 import { PostItem, PostItemProps } from "../../molecules/PostItem";
 
 

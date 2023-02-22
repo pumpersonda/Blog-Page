@@ -6,6 +6,7 @@ import { Navbar } from "../../organisms/Navbar";
 import { Heading } from '../../atoms/Heading';
 import { PostItemProps } from "../../molecules/PostItem";
 import { PostList } from "../../organisms/PostList";
+import { Button } from '../../atoms/Button';
 
 export function BlogPage(){
     const [postList, setPostList] = useState<PostItemProps[]>([]);
@@ -19,6 +20,7 @@ export function BlogPage(){
             header={<Navbar/>}
             footer={<Footer/>}
         >
+            <Button>Create new Post</Button>
             <PostList posts={postList} />
         </PageTemplate>
     );
