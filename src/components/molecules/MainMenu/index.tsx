@@ -15,7 +15,7 @@ export function MainMenu({menus}:MainMenuProps){
     return <menu className='main-menu'>
         {menus.map((menu, index) => {
             return <li className='main-menu__menu'>
-                <Button key={index} text={menu.text} type={ButtonTypes.Link} size={30} />
+                <Button key={index} text={menu.text} type={ButtonTypes.Link} size={30} href={menu.href}/>
             </li>
         })}
     </menu>

@@ -1,14 +1,18 @@
 import './App.css';
-import { Navbar } from './components/organisms/navbar';
-
+import { Navbar } from './components/organisms/Navbar';
+import { Footer } from './components/organisms/Footer'
+import { PageTemplate } from './components/templates/PageTemplate';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HomePage } from './components/pages/HomePage';
 
 function App() {
   return (
-    <div className="App">
-      <div className="App-test">
-        <Navbar/>        
-      </div>     
-    </div>
+    <BrowserRouter>
+      <Routes>
+          <Route path='/'  element={<HomePage/>} />
+          <Route path='*' element={<p>Not found</p>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

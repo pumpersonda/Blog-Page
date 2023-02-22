@@ -1,4 +1,5 @@
 import classNames from 'classnames';
+import { Link } from 'react-router-dom';
 import './index.css';
 export enum ButtonTypes {
     Link,
@@ -27,6 +28,9 @@ export function Button({ type = ButtonTypes.Default, text = '', isDisabled = fal
     return <>
         { type === ButtonTypes.Default ? 
         (<button className={btnClass} disabled={isDisabled} {...props} style={{...style}}>{text}</button>) :
-        <a className={btnClass} href={ !!href ? href : '#'}  {...props} style={{...style}}>{text}</a>}
+        <Link className={btnClass} to={!!href ? href : '#'} {...props} style={{...style}}>
+            {text}
+        </Link>
+        }
     </>
 }

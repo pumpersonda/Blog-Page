@@ -6,21 +6,21 @@ import './index.css';
 export function Navbar(){
     const menus = [{
         id: "1",
-        href: "#",
+        href: "/",
         text: "Home"  
   }, {
     id: "2",
-    href:"#",
+    href:"/About",
     text: "About"
   },
   {
     id: "3",
-    href:"#",
+    href:"/Blog",
     text: "Blog"
   },
   {
     id: "3",
-    href:"#",
+    href:"/Contact",
     text: "Contact"
   }
 ]
