@@ -8,6 +8,7 @@ import { PostInformation } from '../../molecules/PostInformationForm';
 import { Footer } from '../../organisms/Footer';
 import { Navbar } from '../../organisms/Navbar';
 import { PageTemplate } from '../../templates/PageTemplate';
+import '../PostDetails/index.css';
 
 export interface Post extends PostInformation {
   content: string;
@@ -41,9 +42,10 @@ export function PostEditDetails() {
 
   return (
     <PageTemplate header={<Navbar />} footer={<Footer />}>
-      <Heading level={1}>{currentPost?.title}</Heading>
-      <Heading level={5}>{currentPost?.author}</Heading>
-      <Heading level={6}>{currentPost?.publishedOn}</Heading>
+      <div className='post-detail__container--edit'>
+      <div className='post-detail__title'>{currentPost?.title}</div>
+        <div className='post-detail__author'>{currentPost?.author}</div>
+        <div className='post-detail__date'>{currentPost?.publishedOn}</div>
       <div className="post-content--input">
         <textarea
           name="edit"
@@ -55,6 +57,8 @@ export function PostEditDetails() {
         />
         <Button {...{ onClick: onSubmitHandler }}>UPDATE</Button>
       </div>
+      </div>
+        
     </PageTemplate>
   );
 }

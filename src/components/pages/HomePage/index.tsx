@@ -6,7 +6,7 @@ import { PageTemplate } from '../../templates/PageTemplate';
 export function HomePage() {
   return (
     <div className="App-test">
-      <PageTemplate hero={<Hero />} header={<Navbar />} footer={<Footer />}>
+      <PageTemplate hero={<Hero heading='Welcome'/>} header={<Navbar />} footer={<Footer />}>
         <p>Soy Andre</p>
       </PageTemplate>
     </div>

@@ -17,8 +17,11 @@ export function searchPostByName(title: string): Post[] {
 
 export function savePost(postInformation: Post): string {
   const data: Post[] = fetchPostList();
-  const uniqid = Date.now();
+  const date = Date.now();
+  const uniqid = date;
+
   postInformation.id = uniqid + "";
+  postInformation.publishedOn = new Date().toDateString();
   data.push(postInformation);
   setItem(StorageKey.POSTS, data);
   return postInformation.id;

@@ -1,6 +1,37 @@
 .card-item {
   display: flex;
   margin: 5%;
-  justify-content: center;
+  justify-content: start;
   align-items: flex-start;
+}
+
+.card-item__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-text__date {
+    color: #000;
+    font-size: 15px;
+    line-height: 120%;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.card-text__heading{
+  margin: 15% 0;
+}
+
+.card-text__description {
+  font-size: 25px;
+  max-width: 300px;
+  width: 100%;
+}
+
+.card-item__link img{
+    width: 90%;
+    max-height: 41em;
+    max-width: 68em;
+    min-height: 41em;
 }

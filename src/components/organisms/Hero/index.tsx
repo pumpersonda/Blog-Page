@@ -2,20 +2,27 @@ import { Button } from '../../atoms/Button';
 import { Heading } from '../../atoms/Heading';
 import './index.css';
 
-export function Hero() {
-  const onClick = () => {
-    alert('yay :v');
-  };
+export interface HeroProps {
+  heading?:string;
+  subHeading? :string;
+  buttonText?: string;
+  onClickButton?: () => {}
+}
+
+export function Hero({heading, subHeading, buttonText, onClickButton}: HeroProps) {
+
   return (
     <section className="hero">
       <div>
         <Heading level={1} color="#ffffff">
-          Heading :v
+          {heading}
         </Heading>
         <Heading level={4} color="#ffffff">
-          SubHeading :p
+          {subHeading}
         </Heading>
-        <Button text="CALL TO ACTION" {...{ onClick: onClick }} />
+        {!!buttonText && (
+          <Button text={buttonText} {...{ onClick: onClickButton }} />
+        )}
       </div>
     </section>
   );
