@@ -9,6 +9,7 @@ import { ContactPage } from './components/pages/ContactPage';
 import { BlogPage } from './components/pages/BlogPage';
 import { initializeInformation } from './initializeData';
 import { NewPostPage } from './components/pages/NewPostPage';
+import { EditPostPage } from './components/pages/EditPostPage';
 
 initializeInformation();
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path='/'  element={<HomePage/>} />
           <Route path='/About'  element={<AboutPage/>} />
           <Route path='/Blog'  element={<BlogPage/>} />
+          <Route path='/Blog/:id'  element={<EditPostPage/>} />
           <Route path='/Blog/new' element={<NewPostPage/>} />
           <Route path='/Contact'  element={<ContactPage/>} />
           <Route path='*' element={<p>Not found</p>} />
