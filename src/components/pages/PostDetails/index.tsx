@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { getPostById } from '../../../api';
 import { EMPTY_POST } from '../../../types';
-import { Heading } from '../../atoms/Heading';
 import { PostInformation } from '../../molecules/PostInformationForm';
 import { Footer } from '../../organisms/Footer';
 import { Navbar } from '../../organisms/Navbar';

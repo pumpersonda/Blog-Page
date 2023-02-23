@@ -1,9 +1,8 @@
 import { Button, ButtonTypes } from '../../atoms/Button';
 import { PostInformation } from '../PostInformationForm';
 import { useNavigate } from 'react-router-dom';
-import './index.css';
-import { getDateFormat } from '../../../utils';
 import { Heading } from '../../atoms/Heading';
+import './index.css';
 
 export function PostItem({
   id,

@@ -3,7 +3,6 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { getPostById, updatePost } from '../../../api';
 import { EMPTY_POST } from '../../../types';
 import { Button } from '../../atoms/Button';
-import { Heading } from '../../atoms/Heading';
 import { PostInformation } from '../../molecules/PostInformationForm';
 import { Footer } from '../../organisms/Footer';
 import { Navbar } from '../../organisms/Navbar';

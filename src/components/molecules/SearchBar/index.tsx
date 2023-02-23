@@ -42,7 +42,7 @@ export function SearchBar() {
             placeholder="ENTER KEYWORD"
             {...{
               onFocus: onFocusHandler,
-              
+              onBlur: onBlurHandler,
               value: inputValue,
               onChange: onChangeHandler,
             }}

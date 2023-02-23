@@ -7,19 +7,25 @@ import './index.css';
 
 export function HomePage() {
   const navigate = useNavigate();
-  const goTo = () =>{
+  const goTo = () => {
     navigate('Blog');
-  }
+  };
   return (
     <div className="App-test">
       <PageTemplate
-        hero={<Hero heading="ReactJS take-home test" buttonText='Check our blogs!' onClickButton={goTo}/>}
+        hero={
+          <Hero
+            heading="ReactJS take-home test"
+            buttonText="Check our blogs!"
+            onClickButton={goTo}
+          />
+        }
         header={<Navbar />}
         footer={<Footer />}
       >
         <div className="home">
           <div className="home__block">
-            <section className='home__block--text'>
+            <section className="home__block--text">
               Nullam maximus eros purus, vel dictum lorem pellentesque eget.
               Aenean et massa accumsan, varius velit tristique, tempus enim. Sed
               ligula leo, venenatis in interdum a, gravida vel metus. Sed
@@ -49,7 +55,7 @@ export function HomePage() {
                 alt="yucatan"
                 width={400}
               />
-              <section className='home__block--section-2'>
+              <section className="home__block--section-2">
                 Aenean et massa accumsan, varius velit tristique venenatis in
                 interdum a, gravida vel metus. Sed sollicitudin magna quam, id
                 rutrum tortor porttitor ac. Integer sapien libero, molestie sit

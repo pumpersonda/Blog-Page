@@ -16,7 +16,7 @@
   color: white;
 }
 
-.button__default:disabled{
+.button__default:disabled {
   background-color: rgb(223, 180, 150);
 }
 

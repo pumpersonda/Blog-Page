@@ -56,9 +56,14 @@ export function PostInformationForm({
     onSubmit(newPost);
   };
 
-  const isButtonDisabled = ()=>{
-    return newPost.title === '' || newPost.description === '' || newPost.author === '' || newPost.imageURL === '';
-  }
+  const isButtonDisabled = () => {
+    return (
+      newPost.title === '' ||
+      newPost.description === '' ||
+      newPost.author === '' ||
+      newPost.imageURL === ''
+    );
+  };
 
   return (
     <div className="post-information-form">

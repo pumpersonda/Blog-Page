@@ -1,23 +1,22 @@
 .footer {
   background-color: #23222c;
-  color:white;
+  color: white;
   padding: 2%;
   display: flex;
 }
 
-.footer .button__link{
+.footer .button__link {
   color: white;
 }
 
-
-.footer__section1{
+.footer__section1 {
   display: flex;
   flex-direction: column;
 }
 
-.footer__section2{
+.footer__section2 {
   display: flex;
   flex-direction: row;
-  align-items: end;
+  align-items: flex-end;
   flex: 1;
 }
