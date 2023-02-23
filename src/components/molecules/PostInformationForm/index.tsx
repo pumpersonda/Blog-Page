@@ -56,6 +56,10 @@ export function PostInformationForm({
     onSubmit(newPost);
   };
 
+  const isButtonDisabled = ()=>{
+    return newPost.title === '' || newPost.description === '' || newPost.author === '' || newPost.imageURL === '';
+  }
+
   return (
     <div className="post-information-form">
       <Label text={'Title'} inputId={titleId} />
@@ -98,7 +102,7 @@ export function PostInformationForm({
         }}
       />
 
-      <Button {...{ onClick: onSubmitHandler }}>
+      <Button {...{ onClick: onSubmitHandler }} isDisabled={isButtonDisabled()}>
         {buttonText ? buttonText : 'CREATE'}
       </Button>
     </div>

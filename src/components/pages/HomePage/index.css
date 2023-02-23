@@ -1,0 +1,38 @@
+.home {
+  display: flex;
+  margin-top: 2%;
+}
+
+.home__block {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home__block--section-2 {
+  margin: 0 5% 10%;
+}
+
+.home__block--text{
+  margin: 5%;
+}
+
+.home__block img {
+  max-width: 100%;
+}
+
+.home__block--section-1 {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 18%;
+}
+
+.home__block--img-group {
+  display: flex;
+}
+
+.home__block--img-group img {
+  margin: 10px;
+}

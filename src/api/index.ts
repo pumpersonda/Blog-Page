@@ -1,6 +1,6 @@
-import { Post } from "../components/pages/PostEditDetails";
-import { getItem, setItem } from "../store";
-import { StorageKey } from "../types";
+import { Post } from '../components/pages/PostEditDetails';
+import { getItem, setItem } from '../store';
+import { StorageKey } from '../types';
 
 export function fetchPostList(): Post[] {
   const data: Post[] = getItem(StorageKey.POSTS);
@@ -11,7 +11,7 @@ export function searchPostByName(title: string): Post[] {
   console.log(title);
   const data: Post[] = fetchPostList();
   return data.filter((post: Post) =>
-    post.title.toLocaleLowerCase().includes(title.toLocaleLowerCase())
+    post.title.toLocaleLowerCase().includes(title.toLocaleLowerCase()),
   );
 }
 
@@ -20,7 +20,7 @@ export function savePost(postInformation: Post): string {
   const date = Date.now();
   const uniqid = date;
 
-  postInformation.id = uniqid + "";
+  postInformation.id = uniqid + '';
   postInformation.publishedOn = new Date().toDateString();
   data.push(postInformation);
   setItem(StorageKey.POSTS, data);

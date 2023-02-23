@@ -42,23 +42,22 @@ export function PostEditDetails() {
 
   return (
     <PageTemplate header={<Navbar />} footer={<Footer />}>
-      <div className='post-detail__container--edit'>
-      <div className='post-detail__title'>{currentPost?.title}</div>
-        <div className='post-detail__author'>{currentPost?.author}</div>
-        <div className='post-detail__date'>{currentPost?.publishedOn}</div>
-      <div className="post-content--input">
-        <textarea
-          name="edit"
-          id="edit"
-          cols={60}
-          rows={20}
-          value={currentPost?.content}
-          onChange={onChangeHandler}
-        />
-        <Button {...{ onClick: onSubmitHandler }}>UPDATE</Button>
+      <div className="post-detail__container--edit">
+        <div className="post-detail__title">{currentPost?.title}</div>
+        <div className="post-detail__author">{currentPost?.author}</div>
+        <div className="post-detail__date">{currentPost?.publishedOn}</div>
+        <div className="post-content--input">
+          <textarea
+            name="edit"
+            id="edit"
+            cols={60}
+            rows={20}
+            value={currentPost?.content}
+            onChange={onChangeHandler}
+          />
+          <Button {...{ onClick: onSubmitHandler }}>UPDATE</Button>
+        </div>
       </div>
-      </div>
-        
     </PageTemplate>
   );
 }

@@ -29,7 +29,7 @@ export function Navbar() {
 
   return (
     <nav className="navbar">
-      <Logo url="https://1000marcas.net/wp-content/uploads/2020/11/Mortal-Kombat-logo.jpg" />
+      <Logo url="https://pbs.twimg.com/profile_images/451924608388591616/CWE80cBY_400x400.png" />
       <MainMenu menus={menus} />
       <SearchBar />
     </nav>

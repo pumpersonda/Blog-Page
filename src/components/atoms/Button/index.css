@@ -16,6 +16,10 @@
   color: white;
 }
 
+.button__default:disabled{
+  background-color: rgb(223, 180, 150);
+}
+
 .button__link {
   font-weight: bold;
   color: #0a0505;

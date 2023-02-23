@@ -6,7 +6,7 @@ export interface LogoProps {
 export function Logo({ url, alt }: LogoProps) {
   return (
     <a href="/">
-      <img src={url} alt={alt ? alt : ''} width="100" />
+      <img src={url} alt={alt ? alt : ''} width="100" style={{borderRadius: '25px'}} />
     </a>
   );
 }

@@ -23,15 +23,23 @@ export function PostItem({
 
   return (
     <div className="card-item">
-      <Button type={ButtonTypes.Link} href={`/Blog/post/${id}`} {...{class: 'card-item__link'}}>
-        <img src={imageURL} alt=""/>
+      <Button
+        type={ButtonTypes.Link}
+        href={`/Blog/post/${id}`}
+        {...{ class: 'card-item__link' }}
+      >
+        <img src={imageURL} alt="" />
       </Button>
       <div className="card-item__text">
         <div className="card-text__date">{publishedOn}</div>
         <div className="card-text__heading">
-        <Button size={30} type={ButtonTypes.Link} href={`/Blog/post/${id}`}>{title}</Button>
+          <Button size={30} type={ButtonTypes.Link} href={`/Blog/post/${id}`}>
+            {title}
+          </Button>
         </div>
-        <div className="card-text__description"><p>{description}</p></div>
+        <div className="card-text__description">
+          <p>{description}</p>
+        </div>
         <div className="card-text__author">
           <Heading level={3}> By {author} </Heading>
         </div>

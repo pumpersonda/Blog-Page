@@ -9,8 +9,8 @@ export function PostList({ posts }: PostListProps) {
   return (
     <div>
       {posts.length > 0 ? (
-        posts.map((post) => {
-          return <PostItem {...post} />;
+        posts.map((post, index) => {
+          return <PostItem key={index} {...post} />;
         })
       ) : (
         <p>No posts at this moment</p>

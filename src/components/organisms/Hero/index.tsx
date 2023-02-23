@@ -3,14 +3,18 @@ import { Heading } from '../../atoms/Heading';
 import './index.css';
 
 export interface HeroProps {
-  heading?:string;
-  subHeading? :string;
+  heading?: string;
+  subHeading?: string;
   buttonText?: string;
-  onClickButton?: () => {}
+  onClickButton?: () => void;
 }
 
-export function Hero({heading, subHeading, buttonText, onClickButton}: HeroProps) {
-
+export function Hero({
+  heading,
+  subHeading,
+  buttonText,
+  onClickButton,
+}: HeroProps) {
   return (
     <section className="hero">
       <div>

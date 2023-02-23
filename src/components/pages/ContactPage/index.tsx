@@ -6,6 +6,7 @@ import { Heading } from '../../atoms/Heading';
 export function ContactPage() {
   return (
     <PageTemplate header={<Navbar />} footer={<Footer />}>
+      <section style={{margin: '3%'}}>
       <Heading level={1}>Contact</Heading>
       <ul>
         <li>Name: André Roberto Chay Sonda</li>
@@ -17,6 +18,7 @@ export function ContactPage() {
           </a>
         </li>
       </ul>
+      </section>
     </PageTemplate>
   );
 }

@@ -1,26 +1,26 @@
-import { Post } from "./components/pages/PostEditDetails";
+import { Post } from './components/pages/PostEditDetails';
 
 export const INITIAL_POST_LIST: Post[] = [
   {
-    id: "1",
-    author: "Andre Chay Sonda",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    id: '1',
+    author: 'Andre Chay Sonda',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     imageURL:
-      "https://assets.website-files.com/6231c31a6f6b11d3790a8978/63f54854dc6b0b143182a3c1_BlogCover_Build-employee-comm.jpg",
-    title: "Foo",
-    publishedOn: "Thu Feb 23 2023",
+      'https://assets.website-files.com/6231c31a6f6b11d3790a8978/63f54854dc6b0b143182a3c1_BlogCover_Build-employee-comm.jpg',
+    title: 'Foo',
+    publishedOn: 'Thu Feb 23 2023',
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean finibus tellus ut justo maximus, ultrices semper erat porta. Pellentesque interdum pellentesque finibus. Donec sed consectetur orci. Ut nunc tellus, volutpat at blandit non, dignissim at nisi. Nulla nec tortor nec sem lacinia vulputate. Integer nisi turpis, varius a efficitur sit amet, blandit ac orci. Fusce ut nibh luctus, consequat lorem id, auctor dolor. Mauris vitae finibus ligula, nec gravida velit. Duis mattis scelerisque libero, id porta velit efficitur vel.\n <h1>Holiii</h1> Maecenas tincidunt arcu sed pharetra vulputate. Proin turpis dui, pretium id lectus in, mollis commodo nulla. Nulla facilisi. Sed viverra varius auctor. Pellentesque eu felis enim. Maecenas egestas nulla sed pharetra pellentesque. Quisque ultrices, massa eget tempor semper, metus purus scelerisque sem, vel vehicula odio orci non magna. In non lacinia nisi.",
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean finibus tellus ut justo maximus, ultrices semper erat porta. Pellentesque interdum pellentesque finibus. Donec sed consectetur orci. Ut nunc tellus, volutpat at blandit non, dignissim at nisi. Nulla nec tortor nec sem lacinia vulputate. Integer nisi turpis, varius a efficitur sit amet, blandit ac orci. Fusce ut nibh luctus, consequat lorem id, auctor dolor. Mauris vitae finibus ligula, nec gravida velit. Duis mattis scelerisque libero, id porta velit efficitur vel.\n <h1>Holiii</h1> Maecenas tincidunt arcu sed pharetra vulputate. Proin turpis dui, pretium id lectus in, mollis commodo nulla. Nulla facilisi. Sed viverra varius auctor. Pellentesque eu felis enim. Maecenas egestas nulla sed pharetra pellentesque. Quisque ultrices, massa eget tempor semper, metus purus scelerisque sem, vel vehicula odio orci non magna. In non lacinia nisi.',
   },
   {
-    id: "2",
-    author: "Andre  Chay Sonda",
+    id: '2',
+    author: 'Andre  Chay Sonda',
     description:
-      "Cras ante risus, pretium et est quis, gravida congue metus. Nunc sollicitudin enim vitae pellentesque tincidunt.  ",
+      'Cras ante risus, pretium et est quis, gravida congue metus. Nunc sollicitudin enim vitae pellentesque tincidunt.  ',
     imageURL:
-      "https://assets.website-files.com/6231c31a6f6b11d3790a8978/63f54854dc6b0b143182a3c1_BlogCover_Build-employee-comm.jpg",
-    title: "Bar",
-    publishedOn: "Thu Feb 23 2023",
+      'https://assets.website-files.com/6231c31a6f6b11d3790a8978/63f54854dc6b0b143182a3c1_BlogCover_Build-employee-comm.jpg',
+    title: 'Bar',
+    publishedOn: 'Thu Feb 23 2023',
     content: `
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean finibus tellus ut justo maximus, ultrices semper erat porta. Pellentesque interdum pellentesque finibus. Donec sed consectetur orci. Ut nunc tellus, volutpat at blandit non, dignissim at nisi. Nulla nec tortor nec sem lacinia vulputate. Integer nisi turpis, varius a efficitur sit amet, blandit ac orci. Fusce ut nibh luctus, consequat lorem id, auctor dolor. Mauris vitae finibus ligula, nec gravida velit. Duis mattis scelerisque libero, id porta velit efficitur vel.
 
