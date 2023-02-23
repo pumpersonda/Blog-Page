@@ -1,9 +1,9 @@
-import { Button } from "../../atoms/Button";
-import { PostItem, PostItemProps } from "../../molecules/PostItem";
+import { PostInformation } from "../../molecules/PostInformationForm";
+import { PostItem } from "../../molecules/PostItem";
 
 
 export interface PostListProps{
-    posts: PostItemProps[];
+    posts: PostInformation[];
 }
 
 export function PostList({ posts }:PostListProps) {

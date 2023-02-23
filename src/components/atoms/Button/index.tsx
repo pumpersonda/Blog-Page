@@ -32,10 +32,10 @@ export function Button({ type = ButtonTypes.Default, text = '', isDisabled = fal
             {text}
             {props.children}
         </button>) :
-        <Link className={btnClass} to={!!href ? href : '#'} {...props} style={{...style}}>
-            {text}
-            {props.children}
-        </Link>
+            <Link className={btnClass} to={!!href ? href : '#'} {...props} style={{...style}}>
+                {text}
+                {props.children}
+            </Link>
         }
     </>
 }

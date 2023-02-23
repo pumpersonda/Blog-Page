@@ -3,25 +3,31 @@ import { fetchPostList } from '../../../api';
 import { PageTemplate } from "../../templates/PageTemplate";
 import { Footer } from "../../organisms/Footer";
 import { Navbar } from "../../organisms/Navbar";
-import { Heading } from '../../atoms/Heading';
-import { PostItemProps } from "../../molecules/PostItem";
+import { useNavigate } from "react-router-dom";
 import { PostList } from "../../organisms/PostList";
 import { Button } from '../../atoms/Button';
+import { PostInformation } from '../../molecules/PostInformationForm';
 
 export function BlogPage(){
-    const [postList, setPostList] = useState<PostItemProps[]>([]);
+    const [postList, setPostList] = useState<PostInformation[]>([]);
+    const navigate = useNavigate();
 
     useEffect(() => {
         const data = fetchPostList();
         setPostList([...data]);
     }, []);
+
+    const handleClick = () => {
+        navigate("new");
+    }
+
     return (
         <PageTemplate
             header={<Navbar/>}
             footer={<Footer/>}
         >
-            <Button>Create new Post</Button>
-            <PostList posts={postList} />
+            <Button {...{onClick: handleClick}}>Create new Post</Button>
+            <PostList posts={postList}/>
         </PageTemplate>
     );
 }

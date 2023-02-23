@@ -9,10 +9,10 @@ export interface InputProps{
     isInvalid?: boolean;
     placeholder?:string;
 }
-export function Input({id="", type = 'text', isInvalid = false, placeholder = ''}: InputProps){
+export function Input({id="", type = 'text', isInvalid = false, placeholder = '', ...props}: InputProps){
     const inputClass = classNames({
         input: true,
         'input__text': type === 'text'
     });
-    return <input id={id} className={inputClass} type={type} disabled={isInvalid} placeholder={placeholder} />
+    return <input id={id} className={inputClass} type={type} disabled={isInvalid} placeholder={placeholder} {...props} />
 }

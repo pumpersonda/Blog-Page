@@ -1,0 +1,10 @@
+.post-information-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-information-form input {
+    background-color : white;
+    color:black; 
+    border: 1px solid black;
+}

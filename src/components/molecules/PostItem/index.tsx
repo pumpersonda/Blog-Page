@@ -1,19 +1,12 @@
 import { Button, ButtonTypes } from '../../atoms/Button';
+import { PostInformation } from '../PostInformationForm';
 import './index.css';
 
-export interface PostItemProps {
-    id: string;
-    publishedOn: string;
-    imageUrl: string;
-    title: string;
-    description: string;
-    author: string;
-}
 
-export function PostItem({ id, publishedOn, imageUrl, title, description, author }: PostItemProps){
+export function PostItem({ id, publishedOn, imageURL, title, description, author }: PostInformation){
     return <div className='card-item'>
         <Button type={ButtonTypes.Link} href={`/Blog/post/${id}`}>
-            <img src={imageUrl} alt="" height="200" width="200"/>
+            <img src={imageURL} alt="" height="200" width="200"/>
         </Button>
         <div className='card-item__text'>
             <div className='card-text__date'>{publishedOn}</div>
