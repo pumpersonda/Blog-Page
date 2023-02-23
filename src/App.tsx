@@ -8,6 +8,7 @@ import { initializeInformation } from './initializeData';
 import { NewPostPage } from './components/pages/NewPostPage';
 import { PostEditDetails } from './components/pages/PostEditDetails';
 import { PostDetails } from './components/pages/PostDetails';
+import { NotFoundPage } from './components/pages/NotFoundPage/NotFoundPage';
 
 initializeInformation();
 function App() {
@@ -22,7 +23,7 @@ function App() {
         <Route path="/Blog/post/:id" element={<PostDetails />} />
         <Route path="/Blog/new" element={<NewPostPage />} />
         <Route path="/Contact" element={<ContactPage />} />
-        <Route path="*" element={<p>Not found</p>} />
+        <Route path="*" element={<NotFoundPage/>} />
       </Routes>
     </BrowserRouter>
   );

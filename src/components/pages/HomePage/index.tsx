@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import { Heading } from '../../atoms/Heading';
 import { Footer } from '../../organisms/Footer';
 import { Hero } from '../../organisms/Hero';
 import { Navbar } from '../../organisms/Navbar';
@@ -26,6 +27,7 @@ export function HomePage() {
         <div className="home">
           <div className="home__block">
             <section className="home__block--text">
+              <Heading level={1}>Aenean sit amet</Heading>
               Nullam maximus eros purus, vel dictum lorem pellentesque eget.
               Aenean et massa accumsan, varius velit tristique, tempus enim. Sed
               ligula leo, venenatis in interdum a, gravida vel metus. Sed
@@ -56,6 +58,7 @@ export function HomePage() {
                 width={400}
               />
               <section className="home__block--section-2">
+                <Heading level={1}> Mauris a quam sed</Heading>
                 Aenean et massa accumsan, varius velit tristique venenatis in
                 interdum a, gravida vel metus. Sed sollicitudin magna quam, id
                 rutrum tortor porttitor ac. Integer sapien libero, molestie sit
