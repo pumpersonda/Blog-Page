@@ -27,7 +27,8 @@ export function NewPostPage() {
       updatePost(post);
       navigate(`/Blog/edit/details/${id}`);
     } else {
-      savePost(post);
+      const id = savePost(post);
+      navigate(`/Blog/edit/details/${id}`);
     }
   };
 

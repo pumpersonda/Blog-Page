@@ -6,10 +6,10 @@ import { Navbar } from '../../organisms/Navbar';
 import { useNavigate } from 'react-router-dom';
 import { PostList } from '../../organisms/PostList';
 import { Button } from '../../atoms/Button';
-import { PostInformation } from '../../molecules/PostInformationForm';
+import { Post } from '../PostEditDetails';
 
 export function BlogPage() {
-  const [postList, setPostList] = useState<PostInformation[]>([]);
+  const [postList, setPostList] = useState<Post[]>([]);
   const navigate = useNavigate();
 
   useEffect(() => {

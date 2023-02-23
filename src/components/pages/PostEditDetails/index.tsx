@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { getPostById, updatePost } from '../../../api';
 import { EMPTY_POST } from '../../../types';
 import { Button } from '../../atoms/Button';
@@ -15,7 +15,7 @@ export interface Post extends PostInformation {
 
 export function PostEditDetails() {
   const [currentPost, setCurrentPost] = useState<Post>({ ...EMPTY_POST });
-
+  const navigate = useNavigate();
   const { id } = useParams();
 
   useEffect(() => {
@@ -36,6 +36,7 @@ export function PostEditDetails() {
 
   const onSubmitHandler = function () {
     updatePost(currentPost);
+    navigate(`/Blog/post/${id}`);
   };
 
   return (
