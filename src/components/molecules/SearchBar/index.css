@@ -1,17 +1,17 @@
-.search-bar  {
-    display: flex;
-    flex-direction: column;    
+.search-bar {
+  display: flex;
+  flex-direction: column;
 }
 
 .search-bar .label {
-    margin: 1%;
+  margin: 1%;
 }
 
 .search-bar > .search-bar__input--container {
-    display: flex;
+  display: flex;
 }
 
-.search-bar > .search-bar__input--container input, button{
-    margin: 1%;
+.search-bar > .search-bar__input--container input,
+button {
+  margin: 1%;
 }
-

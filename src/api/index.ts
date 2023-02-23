@@ -1,6 +1,6 @@
-import { PostInformation } from "../components/molecules/PostInformationForm";
-import { getItem, setItem } from "../store";
-import { StorageKey } from "../types";
+import { PostInformation } from '../components/molecules/PostInformationForm';
+import { getItem, setItem } from '../store';
+import { StorageKey } from '../types';
 
 export function fetchPostList(): PostInformation[] {
   const data: PostInformation[] = getItem(StorageKey.POSTS);
@@ -9,6 +9,8 @@ export function fetchPostList(): PostInformation[] {
 
 export function savePost(postInformation: PostInformation): void {
   const data: PostInformation[] = fetchPostList();
+  const uniqid = Date.now();
+  postInformation.id = uniqid + '';
   data.push(postInformation);
   setItem(StorageKey.POSTS, data);
 }

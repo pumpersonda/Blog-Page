@@ -1,16 +1,16 @@
 .input {
-    border: none;
-    color: transparent;
+  border: none;
+  color: transparent;
 }
 
 .input__text {
-    background-color : #0a0505;
-    color:white; 
-    width: 250px;
+  background-color: #0a0505;
+  color: white;
+  width: 250px;
 }
 
-.input__text::placeholder{
-    color:#858585;
-    font-size: 16px;
-    font-weight: bold; 
+.input__text::placeholder {
+  color: #858585;
+  font-size: 16px;
+  font-weight: bold;
 }

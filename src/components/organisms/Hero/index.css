@@ -1,9 +1,9 @@
 .hero {
-    background-image: url("https://mdbootstrap.com/img/new/slides/041.webp");
-    background-repeat: no-repeat;    
-    background-position: center;  
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-image: url('https://mdbootstrap.com/img/new/slides/041.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
